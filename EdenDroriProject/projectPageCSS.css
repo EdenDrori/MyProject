@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(168, 168, 168, 0.612);
+
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-left: 100px;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 200px;
+    direction: rtl;
+
+}
+
+.nav-links li {
+    margin-right: 10px;
+}
+
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: #282828;
+    background-color: #dbdbdb;
+    border: 8px solid #dbdbdb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+.hamburger {
+    display: none;
+
+}
+
+.container {
+    height: 400px;
+    width: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-image: url(./images/gray.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: rgba(168, 168, 168, 0.612);
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+}
+
+.container h1 {
+    margin: 20px auto;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #fff;
+    line-height: 4;
+}
+
+.container p {
+    color: #5b5a5a;
+    font-weight: bold;
+    direction: rtl;
+    font-size: 1.5rem;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 14vh;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.watch,
+.download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5b5a5a98;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    direction: rtl;
+
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+
+}
+
+.main {
+    width: 100vw;
+    background-color: #f5f5f5;
+}
+
+.main img {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+
+.copy {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.copy {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.copy .copyright {
+    color: #888;
+    font-size: 14px;
+}
+
+@media screen and (max-width:550px) {
+
+
+
+    .hamburger {
+        display: block;
+
+    }
+
+
+    .menu {
+        display: none;
+
+    }
+
+    .hamburger:hover~.nav-links .menu {
+        display: block;
+        margin: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+
+    .main img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container {
+        height: auto;
+    }
+
+
+
+}
